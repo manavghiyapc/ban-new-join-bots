@@ -1,5 +1,4 @@
 import discord
-import os
 from datetime import datetime, timedelta, timezone
 
 intents = discord.Intents.all()
@@ -29,5 +28,5 @@ async def on_ready():
 
     print("Done.")
     
-token = os.environ['TOKEN']
-client.run(token)
+
+client.run('token')
